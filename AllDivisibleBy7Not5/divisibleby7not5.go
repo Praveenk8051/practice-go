@@ -9,7 +9,6 @@ func printMenu() {
 	fmt.Println("Enter any range of Numbers divisible by 7 and Not divisible by 5")
 	var num1, num2 int
 	_, err := fmt.Scanf("%d, %d", &num1, &num2)
-	fmt.Println(err)
 	if err != nil {
 		fmt.Println("Unknown Value")
 	} else {
@@ -19,7 +18,7 @@ func printMenu() {
 }
 
 func checkNums(num1, num2 int) {
-	if num1 <= num2 {
+	if !(num1 <= num2) {
 		fmt.Println("Enter num1 higher than num2")
 		printMenu()
 	}
