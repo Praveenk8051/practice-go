@@ -5,3 +5,4 @@ use ./DivisibleBy7Not5
 use ./AllDivisibleBy7Not5
 use ./MapWithNumbersSquared
 use ./SliceFromCommaSeparatedString
+use ./ClassWith2MethodsInterface
