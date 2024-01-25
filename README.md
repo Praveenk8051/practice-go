@@ -12,8 +12,7 @@ The aim of this repository is to practice Go programs.
 | 6. [**MapWithNumbersSquared**](https://github.com/Praveenk8051/practice-go/tree/main/MapWithNumbersSquared) |
 | 7. [**SliceFromCommaSeparatedString**](https://github.com/Praveenk8051/practice-go/tree/main/SliceFromCommaSeparatedString) |
 | 8. [**ClassWith2MethodsInterface**](https://github.com/Praveenk8051/practice-go/tree/main/ClassWith2MethodsInterface) |
-
-
+| 9. [**MathFormula**](https://github.com/Praveenk8051/practice-go/tree/main/MathFormula) |
 
 **ToDos**:
 
