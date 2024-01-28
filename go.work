@@ -1,9 +1,15 @@
-go 1.21.5
+go 1.21.6
 
 use ./FactorialOfNumbers
+
 use ./DivisibleBy7Not5
+
 use ./AllDivisibleBy7Not5
+
 use ./MapWithNumbersSquared
+
 use ./SliceFromCommaSeparatedString
+
 use ./ClassWith2MethodsInterface
+
 use ./MathFormula
