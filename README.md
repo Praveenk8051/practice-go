@@ -13,6 +13,11 @@ The aim of this repository is to practice Go programs.
 | 7. [**SliceFromCommaSeparatedString**](https://github.com/Praveenk8051/practice-go/tree/main/SliceFromCommaSeparatedString) |
 | 8. [**ClassWith2MethodsInterface**](https://github.com/Praveenk8051/practice-go/tree/main/ClassWith2MethodsInterface) |
 | 9. [**MathFormula**](https://github.com/Praveenk8051/practice-go/tree/main/MathFormula) |
+| 10. [**2DArray**](https://github.com/Praveenk8051/practice-go/tree/main/2DArray) |
+| 11. [**BinaryDivisible**](https://github.com/Praveenk8051/practice-go/tree/main/BinaryDivisible) |
+| 12. [**RemoveDuplicates**](https://github.com/Praveenk8051/practice-go/tree/main/RemoveDuplicates) |
+| 13. [**SmallSentencesToCaps**](https://github.com/Praveenk8051/practice-go/tree/main/SmallSentencesToCaps) |
+| 14. [**SortWords**](https://github.com/Praveenk8051/practice-go/tree/main/SortWords) |
 
 **ToDos**:
 
@@ -23,4 +28,4 @@ The aim of this repository is to practice Go programs.
 * Automatic Build for all Go scripts with their test statuses next to each programs
 
 
-Ref: [Here](https://github.com/cblte/100-golang-exercises/blob/main/exercises_beginner.adoc)
+Ref: [Here](https://github.com/cblte/100-golang-exercises/tree/main)    
