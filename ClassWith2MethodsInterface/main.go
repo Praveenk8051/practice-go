@@ -1,7 +1,7 @@
 package main
 
 import (
-	"demo/stringutil"
+	"classwith2methodsinterface/stringutil"
 	"fmt"
 )
 
