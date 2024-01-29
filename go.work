@@ -13,3 +13,5 @@ use ./SliceFromCommaSeparatedString
 use ./ClassWith2MethodsInterface
 
 use ./MathFormula
+
+use ./2DArray
