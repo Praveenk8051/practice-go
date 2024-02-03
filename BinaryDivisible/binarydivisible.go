@@ -8,7 +8,7 @@ import (
 
 func main() {
 	var binaryInput string
-
+	divisibleList := make([]int64, 0)
 	fmt.Print("Enter binary numbers separated by commas: ")
 	_, err := fmt.Scan(&binaryInput)
 
@@ -33,7 +33,13 @@ func main() {
 			fmt.Printf("Error converting %s to decimal: %v\n", binaryNumber, err)
 			continue
 		}
+		if decimalNumber%5 == 0 {
+			divisibleList = append(divisibleList, decimalNumber)
+		}
 
 		fmt.Printf("%s: %d\n", binaryNumber, decimalNumber)
+
 	}
+	fmt.Println("Numbers divisible by 5:")
+	fmt.Printf("%b", divisibleList)
 }
