@@ -1,3 +1,3 @@
-module alldivisibleby7Not5
+module binarydivisible
 
 go 1.21.6
