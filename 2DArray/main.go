@@ -2,20 +2,31 @@ package main
 
 import "fmt"
 
-func main() {
-	var num1, num2 int
-	fmt.Scanf("%d,%d", &num1, &num2)
-	// var arr [num1][num2]int
-	// var arr1 [num1][num2]int
-	var arr1 [][]int
-	fmt.Println(arr1)
-	var i, j int
-	// fmt.Println(arr[0][0])
-	for i = 0; i < num2; i++ {
-		for j = 0; j < num1; j++ {
-			arr1[num2][num1] = i * j
-			fmt.Println(arr1)
+func generateArray(X, Y int) [][]int {
+	array := make([][]int, X)
+
+	for i := 0; i < X; i++ {
+		array[i] = make([]int, Y)
+		for j := 0; j < Y; j++ {
+			array[i][j] = i * j
 		}
 	}
-	fmt.Println(arr1)
+
+	return array
+}
+
+func main() {
+	var X, Y int
+
+	fmt.Print("Enter the value of X: ")
+	fmt.Scan(&X)
+	fmt.Print("Enter the value of Y: ")
+	fmt.Scan(&Y)
+
+	resultArray := generateArray(X, Y)
+
+	fmt.Println("Generated 2D Array:")
+	for _, row := range resultArray {
+		fmt.Println(row)
+	}
 }
