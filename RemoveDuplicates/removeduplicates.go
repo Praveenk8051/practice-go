@@ -2,12 +2,12 @@ package main
 
 import (
 	"fmt"
-	"sort"
+	"strings"
 )
 
 func main() {
-	var seriesString []string
-	fmt.Scanf("Enter the series of string", &seriesString)
+	var seriesString string
+	fmt.Scanf("Enter the series of comma separated string %s", &seriesString)
 	_, err := fmt.Scan(&seriesString)
 
 	if err != nil {
@@ -16,13 +16,17 @@ func main() {
 	}
 
 	// Split the input string into individual binary numbers
-	// manyStrings := strings.Split(seriesString, ",")
-	// fmt.Println(manyStrings)
+	manyStrings := strings.Split(seriesString, ",")
+	var arrString []string
+	for _, element := range manyStrings {
+		arrString = append(arrString, element)
+	}
+	fmt.Println(arrString)
 	// sort.Slice(seriesString)
-	sort.Slice(seriesString, func(i, j int) bool {
-		return seriesString[i] < seriesString[j]
-	})
-	fmt.Println("Sorted alphanumerically:", seriesString)
+	// sort.Slice(seriesString, func(i, j int) bool {
+	// 	return seriesString[i] < seriesString[j]
+	// })
+	// fmt.Println("Sorted alphanumerically:", seriesString)
 	// for _, manyString := range manyStrings {
 
 	// }
