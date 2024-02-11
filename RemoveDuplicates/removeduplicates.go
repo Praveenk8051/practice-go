@@ -17,13 +17,15 @@ func main() {
 	}
 
 	// Split the input string into individual binary numbers
+	seriesString = strings.Trim(seriesString, " ")
 	manyStrings := strings.Split(seriesString, ",")
+
 	var arrString []string
-	arrString = append(arrString, manyStrings...)
-	// for _, element := range manyStrings {
-	// 	arrString = append(arrString, element)
-	// }
-	// fmt.Println(arrString)
+	// arrString = append(arrString, manyStrings...)
+	for _, element := range manyStrings {
+		arrString = append(arrString, element)
+	}
+	fmt.Println(arrString)
 	result := removeDuplicates(arrString)
 	fmt.Println(result)
 	// sort.Slice(seriesString)
@@ -32,11 +34,8 @@ func main() {
 	})
 	fmt.Println(result)
 
-	// fmt.Println("Sorted alphanumerically:", seriesString)
-	// for _, manyString := range manyStrings {
-
-	// }
 }
+
 func removeDuplicates(elements []string) []string {
 	encountered := map[string]bool{} // Map to keep track of encountered elements
 	result := []string{}             // Slice to store unique elements
