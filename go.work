@@ -19,3 +19,5 @@ use ./2DArray
 use ./BinaryDivisible
 
 use ./RemoveDuplicates
+
+use ./SmallSentencesToCaps
