@@ -13,6 +13,7 @@ func printMenu() {
 	fmt.Println("Enter any comma seperated numbers")
 	var input string
 	_, err := fmt.Scanf("%s", &input)
+	fmt.Println(input)
 	if err != nil {
 		fmt.Println("Unknown Value")
 	} else {
