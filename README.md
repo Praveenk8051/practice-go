@@ -27,5 +27,4 @@ The aim of this repository is to practice Go programs.
 
 * Automatic Build for all Go scripts with their test statuses next to each programs
 
-
-Ref: [Here](https://github.com/cblte/100-golang-exercises/tree/main)    
+Ref: [Here](https://github.com/cblte/100-golang-exercises/tree/main)
