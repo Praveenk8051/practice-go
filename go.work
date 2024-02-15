@@ -21,3 +21,5 @@ use ./BinaryDivisible
 use ./RemoveDuplicates
 
 use ./SmallSentencesToCaps
+
+use ./SortWords

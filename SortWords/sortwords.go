@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"os"
 	"sort"
+	"strings"
 )
 
 func main() {
@@ -15,9 +16,15 @@ func main() {
 	if scanner.Scan() {
 		input := scanner.Text()
 
+		splitStrings := strings.Split(input, ",")
+
+		// Trim whitespace from each string in the slice
+		for i, str := range splitStrings {
+			splitStrings[i] = strings.TrimSpace(str)
+		}
 		uniqueStrings := make(map[string]bool)
 
-		for _, val := range input {
+		for val := range input {
 			uniqueStrings[val] = true
 		}
 		var uniqueSlice []string
