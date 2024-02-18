@@ -33,8 +33,7 @@ jobs:
     - name: Test Summary
       uses: test-summary/action@v1
       with:
-        paths: |
-          api/tests/report.xml            
+        paths: report.xml            
       if: always()
 
     # - name: Test
