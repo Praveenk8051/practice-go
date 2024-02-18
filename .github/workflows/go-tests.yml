@@ -5,7 +5,8 @@ on:
     branches:
     - 'main'
     - 'develop'
-
+  env:
+    TEST_LOCATION: api/tests
 
 jobs:
   tests:
@@ -27,20 +28,21 @@ jobs:
       run: |
         for dir in $(find . -type d -name "*_test"); do
           echo "Running tests in $dir"
-          go build ./$dir/...
+          go test ./$dir/...
         done
 
-    # - name: Run tests
-    #   run: |
-    #     for dir in $(find . -type d -name "*_test"); do
-    #       echo "Running tests in $dir"
-    #       go test ./$dir/...
-    #     done
-
-    - name: Test
-      uses: robherley/go-test-action@v0.2.0
+    - name: Test Summary
+      uses: test-summary/action@v1
       with:
-        moduleDirectory: .
-        testArguments: ./...
-        omitUntestedPackages: true
-        omitPie: true
+        paths: |
+          ${{ env.TEST_LOCATION }}/report.xml            
+      if: always()
+
+    # - name: Test
+    #   uses: robherley/go-test-action@v0.2.0
+    #   with:
+    #     moduleDirectory: .
+    #     # testArguments: ./HelloWorld/...
+    #     testArguments: ./...
+    #     omitUntestedPackages: true
+    #     omitPie: true
