@@ -41,6 +41,7 @@ jobs:
       uses: robherley/go-test-action@v0.2.0
       with:
         moduleDirectory: .
-        testArguments: ./HelloWorld/...
+        testArguments: 
+        - ./HelloWorld/...
         omitUntestedPackages: true
         omitPie: true

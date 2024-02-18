@@ -28,3 +28,10 @@ The aim of this repository is to practice Go programs.
 * Automatic Build for all Go scripts with their test statuses next to each programs
 
 Ref: [Here](https://github.com/cblte/100-golang-exercises/tree/main)
+
+
+<h2>📝 Test results</h2>
+<div align="center"><h3><code>go test</code></h3>1 test (1 passed)<br><br><table><tr><th>📦 Package</th><th>🟢 Passed</th><th>🔴 Failed</th><th>🟡 Skipped</th><th>⏳ Duration</th></tr><tr><td>🟢 <code>demo</code></td><td>1</td><td>0</td><td>0</td><td>4ms</td></tr><tr><td colspan="5"><details><summary>🧪 Tests</summary><ul><li>🟢<code>TestMain</code></li></ul></details><details><summary>🖨️ Output</summary><pre><code>=== RUN   TestMain
+--- PASS: TestMain (0.00s)
+</code></pre></details></td></tr></table>
+</div>
