@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Enter the number you want to check!")
+	fmt.Println("Enter the number between 2000-3200 you want to check!")
 	var num int
 	_, err := fmt.Scanf("%d", &num)
 
