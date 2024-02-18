@@ -2,7 +2,7 @@
 
 The aim of this repository is to practice Go programs.
 
-[![Tests](https://github.com/Praveenk8051/practice-go/actions/workflows/go-tests.yml/badge.svg)](https://github.com/Praveenk8051/practice-go/actions/workflows/go-tests.yml)
+[![Tests](https://github.com/Praveenk8051/practice-go/actions/workflows/go-tests.yml/badge.svg?branch=main)](https://github.com/Praveenk8051/practice-go/actions/workflows/go-tests.yml)
 
 | Contents|
 | ---------------------- |
