@@ -39,9 +39,6 @@ jobs:
 
     - name: Test
       uses: robherley/go-test-action@v0.1.0
-      testArguments: |
-        for dir in $(find . -type d -name "*_test"); do
-          ./$dir/...
-        done
+      testArguments: ./HelloWorld/...
       omitUntestedPackages: true
       omitPie: true
