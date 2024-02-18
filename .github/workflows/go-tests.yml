@@ -24,7 +24,11 @@ jobs:
       run: go mod download
 
     - name: Run tests
-      run: go test ./...
+      run: |
+        for dir in $(find . -type d -name "*_test"); do
+          echo "Running tests in $dir"
+          go test ./$dir/...
+        done
 
     - name: Test
       uses: robherley/go-test-action@v0.1.0
