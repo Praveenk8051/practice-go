@@ -29,18 +29,3 @@ jobs:
           echo "Running tests in $dir"
           go test ./$dir/...
         done
-
-    - name: Test Summary
-      uses: test-summary/action@v1
-      with:
-        paths: report.xml            
-      if: always()
-
-    # - name: Test
-    #   uses: robherley/go-test-action@v0.2.0
-    #   with:
-    #     moduleDirectory: .
-    #     # testArguments: ./HelloWorld/...
-    #     testArguments: ./...
-    #     omitUntestedPackages: true
-    #     omitPie: true
