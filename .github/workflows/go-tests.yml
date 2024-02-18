@@ -38,7 +38,7 @@ jobs:
     #     done
 
     - name: Test
-      uses: robherley/go-test-action@v0.1.0
+      uses: robherley/go-test-action@v0.2.0
       testArguments: ./HelloWorld/...
       omitUntestedPackages: true
       omitPie: true
