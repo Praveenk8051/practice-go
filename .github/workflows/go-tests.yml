@@ -39,3 +39,11 @@ jobs:
 
     - name: Test
       uses: robherley/go-test-action@v0.2.0
+      with:
+        moduleDirectory: .
+        testArguments: |
+          for dir in $(find . -type d -name "*_test"); do
+            ./$dir/...
+          done
+        omitUntestedPackages: true
+        omitPie: true
