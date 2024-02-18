@@ -29,6 +29,3 @@ jobs:
           echo "Running tests in $dir"
           go test ./$dir/...
         done
-
-    - name: Test
-      uses: robherley/go-test-action@v0.1.0

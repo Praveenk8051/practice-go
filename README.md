@@ -2,10 +2,11 @@
 
 The aim of this repository is to practice Go programs.
 
+[![Tests](https://github.com/Praveenk8051/practice-go/actions/workflows/go-tests.yml/badge.svg?branch=main)](https://github.com/Praveenk8051/practice-go/actions/workflows/go-tests.yml)
 
 | Contents|
 | ---------------------- |
-| 1. [**Hello World**](https://github.com/Praveenk8051/practice-go/tree/main/HelloWorld) |
+| 1. [**Hello World**](https://github.com/Praveenk8051/practice-go/tree/main/HelloWorld) | 
 | 2. [**FactorialOfNumbers**](https://github.com/Praveenk8051/practice-go/tree/main/FactorialOfNumbers) |
 | 3. [**DivisibleBy7Not5**](https://github.com/Praveenk8051/practice-go/tree/main/DivisibleBy7Not5) |
 | 4. [**AllDivisibleBy7Not5**](https://github.com/Praveenk8051/practice-go/tree/main/AllDivisibleBy7Not5) |
@@ -28,3 +29,4 @@ The aim of this repository is to practice Go programs.
 * Automatic Build for all Go scripts with their test statuses next to each programs
 
 Ref: [Here](https://github.com/cblte/100-golang-exercises/tree/main)
+
