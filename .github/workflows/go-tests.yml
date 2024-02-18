@@ -5,8 +5,7 @@ on:
     branches:
     - 'main'
     - 'develop'
-  env:
-    TEST_LOCATION: api/tests
+
 
 jobs:
   tests:
@@ -35,7 +34,7 @@ jobs:
       uses: test-summary/action@v1
       with:
         paths: |
-          ${{ env.TEST_LOCATION }}/report.xml            
+          api/tests/report.xml            
       if: always()
 
     # - name: Test
