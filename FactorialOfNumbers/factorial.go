@@ -27,5 +27,5 @@ func factorial(num int) int {
 }
 
 func printResult(result, num int) {
-	fmt.Printf("The factorial of %d = %d", num, result)
+	fmt.Printf("The factorial of %d = %d\n", num, result)
 }
