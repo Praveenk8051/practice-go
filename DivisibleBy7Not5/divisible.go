@@ -13,7 +13,7 @@ func main() {
 	if !(num >= 2000 && num <= 3200) {
 		fmt.Println("Please enter the number between 2000-3200")
 	}
-	if !(DivisibleBy7(num) && notDivisibleBy5(num)) {
+	if !(DivisibleBy7(num) && NotDivisibleBy5(num)) {
 		fmt.Println("Number doesn't satify the needs")
 	} else {
 		fmt.Println("The number is Divisible By 7 and Not Divisible By 5")
@@ -24,6 +24,6 @@ func main() {
 func DivisibleBy7(num int) bool {
 	return (num%7 == 0)
 }
-func notDivisibleBy5(num int) bool {
+func NotDivisibleBy5(num int) bool {
 	return num%5 != 0
 }
